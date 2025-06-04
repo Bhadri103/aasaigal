@@ -107,11 +107,11 @@ export function MainPage() {
 
       <div className="container mx-auto px-4 py-12">
         <header className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-playfair text-primary-dark mb-6 flex items-center justify-center gap-4 font-bold">
+          <h1 className="text-2xl md:text-2xl font-dancing-script text-primary-dark mb-6 flex items-center justify-center gap-4 font-bold">
             Chinna Chinna Aasai
             <GlowingHeart />
           </h1>
-          <p className="text-2xl text-primary-dark font-dancing-script opacity-90">
+          <p className="text-lg text-primary-dark font-dancing-script opacity-90">
             Sprinkles of joy and hope
           </p>
         </header>
@@ -120,7 +120,7 @@ export function MainPage() {
 
         <footer className="text-center py-12 text-primary-dark">
           <p className="font-dancing-script text-2xl">
-            Made with 💖 for My Love
+            Made with 💖
           </p>
         </footer>
       </div>

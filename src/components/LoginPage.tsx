@@ -26,7 +26,7 @@ export function LoginPage() {
             size={64}
             fill="currentColor"
           />
-          <h1 className="text-4xl font-playfair text-primary-dark mb-4 font-bold">
+          <h1 className="text-4xl font-dancing-script text-primary-dark mb-4 font-bold">
             Unlock Aasaigal
           </h1>
           <p className="text-2xl font-dancing-script text-primary-dark opacity-90">
