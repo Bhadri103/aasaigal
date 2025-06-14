@@ -1,0 +1,133 @@
+@keyframes floatingHeart {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes glowing {
+  0% {
+    filter: drop-shadow(0 0 2px rgba(59, 130, 246, 0.7)); /* Blue */
+  }
+  20% {
+    filter: drop-shadow(0 0 10px rgba(236, 72, 153, 0.9)); /* Pink */
+  }
+  40% {
+    filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.8)); /* Green */
+  }
+  60% {
+    filter: drop-shadow(0 0 12px rgba(239, 68, 68, 0.9)); /* Red */
+  }
+  80% {
+    filter: drop-shadow(0 0 6px rgba(168, 85, 247, 0.8)); /* Purple */
+  }
+  100% {
+    filter: drop-shadow(0 0 2px rgba(59, 130, 246, 0.7)); /* Blue */
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #3b82f6; /* Blue */
+  }
+  20% {
+    color: #ec4899; /* Pink */
+  }
+  40% {
+    color: #22c55e; /* Green */
+  }
+  60% {
+    color: #ef4444; /* Red */
+  }
+  80% {
+    color: #a855f7; /* Purple */
+  }
+  100% {
+    color: #3b82f6; /* Blue */
+  }
+}
+
+@keyframes backgroundColorChange {
+  0% {
+    background-color: rgba(59, 130, 246, 0.1); /* Blue */
+  }
+  20% {
+    background-color: rgba(236, 72, 153, 0.1); /* Pink */
+  }
+  40% {
+    background-color: rgba(34, 197, 94, 0.1); /* Green */
+  }
+  60% {
+    background-color: rgba(239, 68, 68, 0.1); /* Red */
+  }
+  80% {
+    background-color: rgba(168, 85, 247, 0.1); /* Purple */
+  }
+  100% {
+    background-color: rgba(59, 130, 246, 0.1); /* Blue */
+  }
+}
+
+.floating-heart {
+  animation: floatingHeart 3s ease-in-out infinite;
+}
+
+.glowing-heart {
+  animation: glowing 4s ease-in-out infinite;
+}
+
+.color-changing {
+  animation: colorChange 3s ease-in-out infinite;
+}
+
+.bg-color-changing {
+  animation: backgroundColorChange 5s ease-in-out infinite;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, 
+    #EEF2FF 0%, 
+    #DBEAFE 25%, 
+    #FCE7F3 50%, 
+    #DCFCE7 75%, 
+    #FEE2E2 100%
+  );
+  animation: backgroundColorChange 6s ease-in-out infinite;
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Additional utility classes for random color effects */
+.random-border {
+  animation: colorChange 2s ease-in-out infinite;
+  border: 2px solid currentColor;
+}
+
+.random-shadow {
+  animation: glowing 3s ease-in-out infinite;
+}
